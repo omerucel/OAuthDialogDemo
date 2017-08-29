@@ -66,6 +66,7 @@ public class OAuthDialog {
                 });
         webView = (WebView) dialog.findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setUserAgentString("Mozilla/5.0 Google");
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
